@@ -6,7 +6,7 @@ For further information about the syslog protocol see <a href="https://tools.iet
 
 ```python
 def example():
-    log = rpylog("github.com", 80, socket.SOCK_STREAM)
+    log = rpylog("somelogserver.com", 514, socket.SOCK_DGRAM)
     
     log.SetSyslogVersion(1)
     log.SetAppname("TestApp")
