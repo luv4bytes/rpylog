@@ -13,10 +13,10 @@ def example():
     log.SetHostname("justme")
     
     # Use custom template instead of default
-    log.SetMessageTemplate("<%PRI%>%MSG%")
+    log.SetMessageTemplate("<%PRIVAL%>%MSG%")
     
     """
-    Default: <%PRI%>%VERSION% %TIMESTAMP% %HOSTNAME% %APP-NAME% %PROCID% %MSGID% %MSG%
+    Default: <%PRIVAL%>%VERSION% %TIMESTAMP% %HOSTNAME% %APP-NAME% %PROCID% %MSGID% %MSG%
     """
 
     log.Open()
