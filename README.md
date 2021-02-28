@@ -28,7 +28,7 @@ def example():
     log.Warning("Hehe\n")
     log.Notice("Nope\n")
     log.Informational("Just some info\n")
-    log.Debug("Who reads this anyways?\n")
+    log.Debug("Debugging...\n")
     
     log.Close()
 ```
