@@ -1,6 +1,6 @@
 # rpylog
-Simple rsyslog client written in python, supporting custom templates, standard properties and multiple protocols.
-
+Simple rsyslog client written in python, supporting custom templates, standard properties and multiple protocols.   
+For further information about the syslog protocol see <a href="https://tools.ietf.org/html/rfc5424">RFC 5424</a>.
 
 # Example
 
