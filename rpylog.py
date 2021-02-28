@@ -19,7 +19,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 import socket
 import datetime
 import os
-import asyncio
 from enum import Enum
 
 
