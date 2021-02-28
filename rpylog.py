@@ -43,7 +43,7 @@ class rpylog:
     __serverAddress = None
     __port = None
 
-    MessageTemplate = "<%PRI%>%VERSION% %TIMESTAMP% %HOSTNAME% %APP-NAME% %PROCID% %MSGID% %MSG%"
+    MessageTemplate = "<%PRIVAL%>%VERSION% %TIMESTAMP% %HOSTNAME% %APP-NAME% %PROCID% %MSGID% %MSG%"
     
     SyslogVersion = property("%VERSION%", 1)
     AppName = property("%APP-NAME%", None)
@@ -152,7 +152,7 @@ class rpylog:
 
     def __writeLog(self, msg, template, facility, severity, msg_id=None):
         
-        priority = rpylog.property("%PRI%", self.__calcPriority(severity, facility))
+        priority = rpylog.property("%PRIVAL%", self.__calcPriority(severity, facility))
         timestamp = rpylog.property("%TIMESTAMP%", str(datetime.datetime.now()))
         messageId = rpylog.property("%MSGID%", msg_id)
         message = rpylog.property("%MSG%", msg)
